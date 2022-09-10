@@ -10,11 +10,17 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "timer")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
+                .bold()
 
-            Text("Hello, world!")
+            Text("Wait Times")
+                .font(.headline)
+                .padding(.bottom)
+
+            Text("This app shows the live wait times for popular theme parks around the world.")
+                .font(.subheadline)
         }
         .padding()
     }
