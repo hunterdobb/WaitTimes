@@ -8,21 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var islandsOfAdv = Park(lands: [Land](), rides: [Ride]())
+
     var body: some View {
-        VStack {
-            Image(systemName: "timer")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-                .bold()
-
-            Text("Wait Times")
-                .font(.headline)
-                .padding(.bottom)
-
-            Text("This app shows the live wait times for popular theme parks around the world.")
-                .font(.subheadline)
+        NavigationStack {
+            List(islandsOfAdv.lands, id: \.id) { land in
+                NavigationLink(land.name, destination: RidesView(land: land))
+            }
+            .navigationTitle("Islands of Adventure")
+            .task {
+                await fetchData()
+            }
         }
-        .padding()
+    }
+
+    func fetchData() async {
+        // Create url
+        guard let url = URL(string: "https://www.queue-times.com/en-US/parks/64/queue_times.json") else {
+            print("Invalid URL")
+            return
+        }
+
+        // Fetch data from url
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+
+            // Decode data
+            if let decodedResponse = try? JSONDecoder().decode(Park.self, from: data) {
+                islandsOfAdv = decodedResponse
+            }
+        } catch {
+            print("Invalid data")
+        }
     }
 }
 

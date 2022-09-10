@@ -11,6 +11,8 @@
 		B505049B28CCF74E00BA242B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B505049A28CCF74E00BA242B /* ContentView.swift */; };
 		B505049D28CCF74F00BA242B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B505049C28CCF74F00BA242B /* Assets.xcassets */; };
 		B50504A128CCF74F00BA242B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B50504A028CCF74F00BA242B /* Preview Assets.xcassets */; };
+		B50504A828CD30B200BA242B /* RidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50504A728CD30B200BA242B /* RidesView.swift */; };
+		B50504AA28CD30E300BA242B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50504A928CD30E300BA242B /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		B505049C28CCF74F00BA242B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B505049E28CCF74F00BA242B /* WaitTimes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WaitTimes.entitlements; sourceTree = "<group>"; };
 		B50504A028CCF74F00BA242B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B50504A728CD30B200BA242B /* RidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesView.swift; sourceTree = "<group>"; };
+		B50504A928CD30E300BA242B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				B505049828CCF74E00BA242B /* WaitTimesApp.swift */,
 				B505049A28CCF74E00BA242B /* ContentView.swift */,
+				B50504A728CD30B200BA242B /* RidesView.swift */,
+				B50504A928CD30E300BA242B /* Data.swift */,
 				B505049C28CCF74F00BA242B /* Assets.xcassets */,
 				B505049E28CCF74F00BA242B /* WaitTimes.entitlements */,
 				B505049F28CCF74F00BA242B /* Preview Content */,
@@ -139,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50504A828CD30B200BA242B /* RidesView.swift in Sources */,
 				B505049B28CCF74E00BA242B /* ContentView.swift in Sources */,
 				B505049928CCF74E00BA242B /* WaitTimesApp.swift in Sources */,
+				B50504AA28CD30E300BA242B /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
