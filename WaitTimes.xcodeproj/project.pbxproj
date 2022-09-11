@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B505049928CCF74E00BA242B /* WaitTimesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B505049828CCF74E00BA242B /* WaitTimesApp.swift */; };
-		B505049B28CCF74E00BA242B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B505049A28CCF74E00BA242B /* ContentView.swift */; };
+		B505049B28CCF74E00BA242B /* LandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B505049A28CCF74E00BA242B /* LandsView.swift */; };
 		B505049D28CCF74F00BA242B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B505049C28CCF74F00BA242B /* Assets.xcassets */; };
 		B50504A128CCF74F00BA242B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B50504A028CCF74F00BA242B /* Preview Assets.xcassets */; };
 		B50504A828CD30B200BA242B /* RidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50504A728CD30B200BA242B /* RidesView.swift */; };
@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		B505049528CCF74E00BA242B /* WaitTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaitTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B505049828CCF74E00BA242B /* WaitTimesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitTimesApp.swift; sourceTree = "<group>"; };
-		B505049A28CCF74E00BA242B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B505049A28CCF74E00BA242B /* LandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandsView.swift; sourceTree = "<group>"; };
 		B505049C28CCF74F00BA242B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B505049E28CCF74F00BA242B /* WaitTimes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WaitTimes.entitlements; sourceTree = "<group>"; };
 		B50504A028CCF74F00BA242B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -63,9 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				B505049828CCF74E00BA242B /* WaitTimesApp.swift */,
-				B505049A28CCF74E00BA242B /* ContentView.swift */,
-				B50504AD28CD3E1E00BA242B /* CompaniesView.swift */,
+				B505049A28CCF74E00BA242B /* LandsView.swift */,
 				B50504AF28CD41C700BA242B /* ParksView.swift */,
+				B50504AD28CD3E1E00BA242B /* CompaniesView.swift */,
 				B50504A728CD30B200BA242B /* RidesView.swift */,
 				B50504A928CD30E300BA242B /* RideData.swift */,
 				B50504AB28CD3BB800BA242B /* ParkData.swift */,
@@ -155,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B50504A828CD30B200BA242B /* RidesView.swift in Sources */,
-				B505049B28CCF74E00BA242B /* ContentView.swift in Sources */,
+				B505049B28CCF74E00BA242B /* LandsView.swift in Sources */,
 				B50504AE28CD3E1E00BA242B /* CompaniesView.swift in Sources */,
 				B50504AC28CD3BB800BA242B /* ParkData.swift in Sources */,
 				B50504B028CD41C700BA242B /* ParksView.swift in Sources */,

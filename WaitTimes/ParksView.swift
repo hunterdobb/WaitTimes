@@ -13,7 +13,7 @@ struct ParksView: View {
     var body: some View {
         NavigationStack {
             List(company.parks, id: \.id) { park in
-                NavigationLink(park.name, destination: ContentView(ParkURL: "https://queue-times.com/en-US/parks/\(park.id)/queue_times.json"))
+                NavigationLink(park.name, destination: LandsView(themePark: park))
             }
             .navigationTitle(company.name)
             .navigationBarTitleDisplayMode(.inline)
