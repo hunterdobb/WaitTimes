@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var islandsOfAdv = Park(lands: [Land](), rides: [Ride]())
+    var ParkURL: String
 
     var body: some View {
         NavigationStack {
@@ -24,7 +25,7 @@ struct ContentView: View {
 
     func fetchData() async {
         // Create url
-        guard let url = URL(string: "https://www.queue-times.com/en-US/parks/64/queue_times.json") else {
+        guard let url = URL(string: ParkURL) else {
             print("Invalid URL")
             return
         }
@@ -45,6 +46,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(ParkURL: "https://www.queue-times.com/en-US/parks/64/queue_times.json")
     }
 }

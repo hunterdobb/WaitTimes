@@ -11,7 +11,7 @@ import SwiftUI
 struct WaitTimesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CompaniesView()
         }
     }
 }

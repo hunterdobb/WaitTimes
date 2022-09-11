@@ -7,6 +7,26 @@
 
 import Foundation
 
+struct Park: Codable {
+    let lands: [Land]
+    let rides: [Ride]
+}
+
+struct Land: Codable {
+    let id: Int
+    let name: String
+    let rides: [Ride]
+}
+
+struct Ride: Codable {
+    let id: Int
+    let name: String
+    let is_open: Bool
+    let wait_time: Int
+    let last_updated: String
+}
+
+
 /*
 "lands": [LAND]
  // ex land
@@ -21,25 +41,4 @@ import Foundation
         "last_updated": "2022-09-10T16:36:11.000Z"
 
 "rides": []
-
-
  */
-
-struct Park: Codable {
-    var lands: [Land]
-    var rides: [Ride]
-}
-
-struct Land: Codable {
-    var id: Int
-    var name: String
-    var rides: [Ride]
-}
-
-struct Ride: Codable {
-    var id: Int
-    var name: String
-    var is_open: Bool
-    var wait_time: Int
-    var last_updated: String
-}
