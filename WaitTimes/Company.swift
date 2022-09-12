@@ -1,16 +1,16 @@
 //
-//  ParkData.swift
+//  Company.swift
 //  WaitTimes
 //
 //  Created by Hunter Dobbelmann on 9/10/22.
 //
 
-import Foundation
+import SwiftUI
 
 struct Company: Codable {
     let id: Int
     let name: String
-    let parks: [ParkData]
+    let parks: [CompanyPark]
 
     /*
      "id": 11,
@@ -19,7 +19,7 @@ struct Company: Codable {
      */
 }
 
-struct ParkData: Codable {
+struct CompanyPark: Codable {
     let id: Int
     let name: String
     let country: String

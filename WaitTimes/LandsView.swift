@@ -9,19 +9,29 @@ import SwiftUI
 
 struct LandsView: View {
     @State private var park = Park(lands: [Land](), rides: [Ride]())
-//    var ParkURL: String
-    var themePark: ParkData
+    var themePark: CompanyPark
 
     var body: some View {
         NavigationStack {
             List(park.lands, id: \.id) { land in
-                NavigationLink(land.name, destination: RidesView(land: land))
+                Section(header: Text(land.name).font(.headline).foregroundColor(.primary)) {
+                    ForEach(land.rides, id: \.id) { ride in
+                        HStack {
+                            Text(ride.name)
+                            Spacer()
+                            ride.is_open ? Text("\(ride.wait_time) min") : Text("Closed").foregroundColor(.red)
+                        }
+                    }
+                }
+                .textCase(.none)
             }
+            .listStyle(.sidebar)
             .navigationTitle(themePark.name)
             .task {
                 await fetchData()
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
     }
 
     func fetchData() async {

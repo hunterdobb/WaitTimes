@@ -1,11 +1,11 @@
 //
-//  Data.swift
+//  Ride.swift
 //  WaitTimes
 //
 //  Created by Hunter Dobbelmann on 9/10/22.
 //
 
-import Foundation
+import SwiftUI
 
 struct Park: Codable {
     let lands: [Land]
