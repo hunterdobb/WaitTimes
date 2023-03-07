@@ -14,6 +14,7 @@
 		B50504AA28CD30E300BA242B /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50504A928CD30E300BA242B /* Ride.swift */; };
 		B50504AC28CD3BB800BA242B /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50504AB28CD3BB800BA242B /* Company.swift */; };
 		B50504AE28CD3E1E00BA242B /* CompaniesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50504AD28CD3E1E00BA242B /* CompaniesView.swift */; };
+		B572EE2129B7CDB7006970FB /* WaitTimes.docc in Sources */ = {isa = PBXBuildFile; fileRef = B572EE2029B7CDB7006970FB /* WaitTimes.docc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B50504A928CD30E300BA242B /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 		B50504AB28CD3BB800BA242B /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		B50504AD28CD3E1E00BA242B /* CompaniesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesView.swift; sourceTree = "<group>"; };
+		B572EE2029B7CDB7006970FB /* WaitTimes.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = WaitTimes.docc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				B505049C28CCF74F00BA242B /* Assets.xcassets */,
 				B505049E28CCF74F00BA242B /* WaitTimes.entitlements */,
 				B505049F28CCF74F00BA242B /* Preview Content */,
+				B572EE2029B7CDB7006970FB /* WaitTimes.docc */,
 			);
 			path = WaitTimes;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B572EE2129B7CDB7006970FB /* WaitTimes.docc in Sources */,
 				B505049B28CCF74E00BA242B /* LandsView.swift in Sources */,
 				B50504AE28CD3E1E00BA242B /* CompaniesView.swift in Sources */,
 				B50504AC28CD3BB800BA242B /* Company.swift in Sources */,

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CompaniesView: View {
     @State private var companies = [Company]()
+    
 
     var body: some View {
         NavigationStack {
