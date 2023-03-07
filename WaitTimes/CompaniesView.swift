@@ -9,19 +9,27 @@ import SwiftUI
 
 struct CompaniesView: View {
     @State private var companies = [Company]()
+    
 
     var body: some View {
         NavigationStack {
             List(companies, id: \.id) { company in
-                NavigationLink(company.name, destination: ParksView(company: company))
+                Section(header: Text(company.name).font(.headline).foregroundColor(.primary)) {
+                    ForEach(company.parks, id: \.id) { companyPark in
+                        NavigationLink(companyPark.name, destination: LandsView(themePark: companyPark))
+                    }
+                }
+                .textCase(.none)
             }
-            .navigationTitle("Companies")
+            .listStyle(.sidebar)
+            .navigationTitle("All Parks")
             .task {
                 await fetchData()
             }
         }
     }
 
+    // Put this in the view model
     func fetchData() async {
         // Create url
         guard let url = URL(string: "https://queue-times.com/en-US/parks.json") else {

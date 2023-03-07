@@ -11,11 +11,10 @@
 		B505049B28CCF74E00BA242B /* LandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B505049A28CCF74E00BA242B /* LandsView.swift */; };
 		B505049D28CCF74F00BA242B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B505049C28CCF74F00BA242B /* Assets.xcassets */; };
 		B50504A128CCF74F00BA242B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B50504A028CCF74F00BA242B /* Preview Assets.xcassets */; };
-		B50504A828CD30B200BA242B /* RidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50504A728CD30B200BA242B /* RidesView.swift */; };
-		B50504AA28CD30E300BA242B /* RideData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50504A928CD30E300BA242B /* RideData.swift */; };
-		B50504AC28CD3BB800BA242B /* ParkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50504AB28CD3BB800BA242B /* ParkData.swift */; };
+		B50504AA28CD30E300BA242B /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50504A928CD30E300BA242B /* Ride.swift */; };
+		B50504AC28CD3BB800BA242B /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50504AB28CD3BB800BA242B /* Company.swift */; };
 		B50504AE28CD3E1E00BA242B /* CompaniesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50504AD28CD3E1E00BA242B /* CompaniesView.swift */; };
-		B50504B028CD41C700BA242B /* ParksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50504AF28CD41C700BA242B /* ParksView.swift */; };
+		B572EE2129B7CDB7006970FB /* WaitTimes.docc in Sources */ = {isa = PBXBuildFile; fileRef = B572EE2029B7CDB7006970FB /* WaitTimes.docc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +24,10 @@
 		B505049C28CCF74F00BA242B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B505049E28CCF74F00BA242B /* WaitTimes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WaitTimes.entitlements; sourceTree = "<group>"; };
 		B50504A028CCF74F00BA242B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B50504A728CD30B200BA242B /* RidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesView.swift; sourceTree = "<group>"; };
-		B50504A928CD30E300BA242B /* RideData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideData.swift; sourceTree = "<group>"; };
-		B50504AB28CD3BB800BA242B /* ParkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkData.swift; sourceTree = "<group>"; };
+		B50504A928CD30E300BA242B /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
+		B50504AB28CD3BB800BA242B /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		B50504AD28CD3E1E00BA242B /* CompaniesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesView.swift; sourceTree = "<group>"; };
-		B50504AF28CD41C700BA242B /* ParksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksView.swift; sourceTree = "<group>"; };
+		B572EE2029B7CDB7006970FB /* WaitTimes.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = WaitTimes.docc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,15 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				B505049828CCF74E00BA242B /* WaitTimesApp.swift */,
-				B505049A28CCF74E00BA242B /* LandsView.swift */,
-				B50504AF28CD41C700BA242B /* ParksView.swift */,
 				B50504AD28CD3E1E00BA242B /* CompaniesView.swift */,
-				B50504A728CD30B200BA242B /* RidesView.swift */,
-				B50504A928CD30E300BA242B /* RideData.swift */,
-				B50504AB28CD3BB800BA242B /* ParkData.swift */,
+				B505049A28CCF74E00BA242B /* LandsView.swift */,
+				B50504A928CD30E300BA242B /* Ride.swift */,
+				B50504AB28CD3BB800BA242B /* Company.swift */,
 				B505049C28CCF74F00BA242B /* Assets.xcassets */,
 				B505049E28CCF74F00BA242B /* WaitTimes.entitlements */,
 				B505049F28CCF74F00BA242B /* Preview Content */,
+				B572EE2029B7CDB7006970FB /* WaitTimes.docc */,
 			);
 			path = WaitTimes;
 			sourceTree = "<group>";
@@ -154,13 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B50504A828CD30B200BA242B /* RidesView.swift in Sources */,
+				B572EE2129B7CDB7006970FB /* WaitTimes.docc in Sources */,
 				B505049B28CCF74E00BA242B /* LandsView.swift in Sources */,
 				B50504AE28CD3E1E00BA242B /* CompaniesView.swift in Sources */,
-				B50504AC28CD3BB800BA242B /* ParkData.swift in Sources */,
-				B50504B028CD41C700BA242B /* ParksView.swift in Sources */,
+				B50504AC28CD3BB800BA242B /* Company.swift in Sources */,
 				B505049928CCF74E00BA242B /* WaitTimesApp.swift in Sources */,
-				B50504AA28CD30E300BA242B /* RideData.swift in Sources */,
+				B50504AA28CD30E300BA242B /* Ride.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
