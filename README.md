@@ -1,2 +1,4 @@
-# WaitTimes_remote
-This is the begining workings of my wait time tracking app for theme parks. It's using the [parksapi by cubehouse](https://github.com/ThemeParks/parksapi).
+**I've started development on a more complex version of this app [here](https://github.com/hunterdobb/ParkPlan).**
+
+This is a simple app for viewing the wait times for various theme parks around the world. 
+It uses the [Queue Times API](https://queue-times.com/pages/api).
